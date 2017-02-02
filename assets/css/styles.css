@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+
+
+  background: -moz-linear-gradient(322deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(153,218,255,1)), color-stop(100%, rgba(18,134,196,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(322deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(322deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(322deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* ie10+ */
+  background: linear-gradient(128deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1286C4',GradientType=1 ); /* ie6-9 */
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  margin: 100px 0px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 30px;
+  margin: 0px;
+  padding: 5%;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+}
+.container div {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+  height: 60px;
+}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 58px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 64px;
+}
