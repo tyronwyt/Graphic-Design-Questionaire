@@ -5,9 +5,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+
   color: #fff;
+  background-repeat: no-repeat;
 
 
   background: -moz-linear-gradient(322deg, rgba(153,218,255,1) 0%, rgba(18,134,196,1) 100%); /* ff3.6+ */
@@ -30,6 +30,23 @@ p {
   font-size: 30px;
   margin: 0px;
   padding: 5%;
+}
+
+a {color: white;
+}
+
+a:hover {color: blue;}
+a:visited {color: white;}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 16px;
+  padding: 50px 0px 50px 50px;
 }
 
 
